@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace PdfAttachmentHandler
 {
+	/// <summary>
+	/// The application´s main form.
+	/// </summary>
 	public partial class MainForm : Form
 	{
 		public MainForm()
