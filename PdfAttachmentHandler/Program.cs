@@ -38,7 +38,7 @@ namespace PdfAttachmentHandler
 		[STAThread]
 		static void Main(string[] args)
 		{
-			if
+			/*if
 			(
 				(args == null) ||
 				(args.Length < 2) ||
@@ -47,10 +47,30 @@ namespace PdfAttachmentHandler
 			)
 			{
 				return;
-			}
-
+			}*/
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+
+			string pdfPath;
+			using (OpenFileDialog ofd = new OpenFileDialog() { Title = "PDF-Datei auswählen", Filter = "PDF-Dokumente (*.pdf)|*.pdf" })
+			{
+				if (ofd.ShowDialog() != DialogResult.OK)
+				{
+					return;
+				}
+				pdfPath = ofd.FileName;
+			}
+
+			string attachmentPath;
+			using (OpenFileDialog ofd = new OpenFileDialog() { Title = "XML-Datei auswählen", Filter = "XML-Dateien (*.xml)|*.xml" })
+			{
+				if (ofd.ShowDialog() != DialogResult.OK)
+				{
+					return;
+				}
+				attachmentPath = ofd.FileName;
+			}
+
 			Application.Run(new MainForm() { AttachmentPath = attachmentPath, PdfPath = pdfPath });
 		}
 
