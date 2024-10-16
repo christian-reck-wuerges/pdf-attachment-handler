@@ -165,6 +165,9 @@ namespace PdfAttachmentHandler
 				targetDocument.Close();
 			}
 
+			File.Delete(this.PdfPath);
+			File.Move(tempFilename, this.PdfPath);
+
 			e.Result = AttachmentResult.AttachmentAdded;
 		}
 

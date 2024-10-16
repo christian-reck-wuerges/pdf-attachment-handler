@@ -22,7 +22,7 @@ namespace PdfAttachmentHandler {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class PdfAttachmentHandler_res {
+    public class PdfAttachmentHandler_res {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace PdfAttachmentHandler {
         ///   Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PdfAttachmentHandler.PdfAttachmentHandler_res", typeof(PdfAttachmentHandler_res).Assembly);
@@ -51,7 +51,7 @@ namespace PdfAttachmentHandler {
         ///   Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace PdfAttachmentHandler {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die attachment_path= ähnelt.
         /// </summary>
-        internal static string attachment_path_prefix {
+        public static string attachment_path_prefix {
             get {
                 return ResourceManager.GetString("attachment_path_prefix", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace PdfAttachmentHandler {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die pdf_path= ähnelt.
         /// </summary>
-        internal static string pdf_path_prefix {
+        public static string pdf_path_prefix {
             get {
                 return ResourceManager.GetString("pdf_path_prefix", resourceCulture);
             }
